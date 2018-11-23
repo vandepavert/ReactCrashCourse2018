@@ -5,6 +5,9 @@ class Counter extends Component {
     count: 0,
     tags: ["tag1", "tag2", "tag3"]
   };
+  renderTags() {
+    if (this.state.tags.length === 0) return <p>There are no tags!</p>;
+  }
 
   render() {
     return (
